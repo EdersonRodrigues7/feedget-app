@@ -1,0 +1,20 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+// Cria uma tabela no banco de dados chamada "feedbacks"
+// O "?" indica um campo opcional (nullable)
+//o @id indica a primary key, ou seja, a coluna de valores únicos
+model Feedback {
+  id         String  @id @default(uuid())
+  type       String
+  comment    String
+  screenshot String?
+
+  @@map("feedbacks")
+}
