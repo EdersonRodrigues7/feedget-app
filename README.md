@@ -8,6 +8,8 @@ Aplicação desenvolvida com o objetivo de fornecer um formulário simples de fe
 
 Projeto desenvolvido durante a Next Level Week, evento organizado pela [Rocketseat](https://github.com/rocketseat-education/).
 
+Link do projeto: [Feedget App](https://feedget-app-weld.vercel.app/).
+
 ## 💡 Features
 
 - 👍 Envio rápido e intuitivo de feedback por parte do usuário;
@@ -16,31 +18,41 @@ Projeto desenvolvido durante a Next Level Week, evento organizado pela [Rocketse
 
 ## 👨🏽‍💻 Tecnologias
 
-- [ ] TailwindCSS
-- [ ] TypeScript
-- [ ] NodeJS
-- [ ] Express
-- [ ] Prisma
-- [ ] Jest
-- [ ] PostgreSQL
+- ![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+- ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+- ![NodeJS](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
+- ![Express](https://img.shields.io/badge/Express.js-404D59?style=for-the-badge)
+- ![Prisma](https://icons-for-free.com/download-icon-vscode+icons+type+light+prisma-1324451365475006031_256.png) Prisma
+- ![Jest](https://cdn.iconscout.com/icon/free/png-256/jest-3521517-2945020.png) Jest
+- ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
+
+Mais informações sobre o uso de cada ferramenta na [documentação](./docs/feedget-documentation.md).
 
 ## ⚙ Executando o projeto
 
-Utilize o **yarn** ou o **npm install** para instalar as dependências do projeto.
-Em seguida, inicie o projeto.
+Clone o repositório e acesse a pasta:
 
 ```cl
-expo start
+$ git clone https://github.com/devlucascardoso/feedback-widget
+$ cd nlw8
 ```
 
-Lembre-se de criar o seu App no servidor do Discord para obter as credencias de autenticação. Em seguida, defina no arquivo .env as configurações do seu App (remova o example do arquivo .env.example).
+Utilize o **yarn** ou o **npm install** para instalar as dependências do projeto.
+Em seguida, faça a migração do banco de dados (criação das tabelas) e inicie o projeto em ambiente de desenvolvimento.
+Usando npm:
 
 ```cl
-REDIRECT_URI=
-SCOPE=
-RESPONSE_TYPE=
-CLIENT_ID=
-CDN_IMAGE=
+$ npm install
+$ npm prisma migrate dev
+$ npm run dev
+```
+
+Usando yarn:
+
+```cl
+$ yarn install
+$ yarn prisma migrate dev
+$ yarn run dev
 ```
 
 ## 🔖 Layout
