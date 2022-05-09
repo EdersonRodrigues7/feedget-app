@@ -22,8 +22,8 @@ Link do projeto: [Feedget App](https://feedget-app-weld.vercel.app/).
 - ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
 - ![NodeJS](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
 - ![Express](https://img.shields.io/badge/Express.js-404D59?style=for-the-badge)
-- <img src="https://icons-for-free.com/download-icon-vscode+icons+type+light+prisma-1324451365475006031_256.png" width=20 height=20/>
-- <img src="https://cdn.iconscout.com/icon/free/png-256/jest-3521517-2945020.png" width=20 height=20/>
+- <img src="https://icons-for-free.com/download-icon-vscode+icons+type+light+prisma-1324451365475006031_256.png" width=20 height=20/> <strong>Prisma</strong>
+- <img src="https://cdn.iconscout.com/icon/free/png-256/jest-3521517-2945020.png" width=20 height=20/> <strong>Jest</strong>
 - ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
 
 Mais informações sobre o uso de cada ferramenta na [documentação](./docs/feedget-documentation.md).
