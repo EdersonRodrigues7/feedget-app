@@ -28,7 +28,31 @@ Sempre que o servidor rodar com sucesso, a mensagem "HTTP server running!" será
 
 ### Prisma + PostgreSQL para Banco de Dados
 
-O [Prisma](https://www.prisma.io/) é uma ferramenta de [ORM (Object Relational Mapping)](https://www.devmedia.com.br/orm-object-relational-mapper/19056) que auxilia na integração do projeto com o banco de dados, permitindo
+O [Prisma](https://www.prisma.io/) é uma ferramenta de [ORM (Object Relational Mapping)](https://www.devmedia.com.br/orm-object-relational-mapper/19056) que auxilia na integração do projeto com o banco de dados, permitindo o mapeamento dos objetos definidos em linguagem Javascript/TypeScript para as tabelas em SQL.
+
+No arquivo "schema.prisma", estão elencadas as informações sobre o tipo de banco de dados (nesse caso, o PostgreSQL) e quais tabelas (models) devem ser criadas:
+
+```cl
+  datasource db {
+    provider = "postgresql"
+    url      = env("DATABASE_URL")
+  }
+
+  model Feedback {
+    id         String  @id @default(uuid())
+    type       String
+    comment    String
+    screenshot String?
+
+    @@map("feedbacks")
+  }
+```
+
+- O "?" indica um campo opcional (nullable)
+- @id indica a primary key, ou seja, a coluna de valores únicos
+- "uuid" é um modelo de chave única, comum para a atribuição de id's não sequenciais
+
+No Feedget App apenas uma tabela é utilizada para receber o conjunto de feedback que vem do frontend.
 
 ### Rotas com Express + Prisma
 
