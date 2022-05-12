@@ -1,5 +1,5 @@
 ## Feedget App
-![Badge MIT License](https://img.shields.io/github/license/EdersonRodrigues7/feedget-app) ![Badge em desenvolvimento](https://img.shields.io/badge/status/em-desenvolvimento/green)
+![Badge MIT License](https://img.shields.io/github/license/EdersonRodrigues7/feedget-app) ![Badge em desenvolvimento](https://img.shields.io/badge/status-em%20desenvolvimento-green)
 
 ![Capa](./docs/images/feedget-capa.png)
 
