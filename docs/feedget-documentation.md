@@ -52,7 +52,15 @@ No arquivo "schema.prisma", estão elencadas as informações sobre o tipo de ba
 - @id indica a primary key, ou seja, a coluna de valores únicos
 - "uuid" é um modelo de chave única, comum para a atribuição de id's não sequenciais
 
-No Feedget App apenas uma tabela é utilizada para receber o conjunto de feedback que vem do frontend.
+No Feedget App apenas uma tabela é utilizada para receber o conjunto de feedback que vem do frontend. Também há um arquivo TypeScript para o Prisma emitir um relatório de cada query(operação) que for feita pelo programa:
+
+```cl
+  //prisma.ts
+  import { PrismaClient } from '@prisma/client';
+  export const prisma = new PrismaClient({
+    log: ['query']
+  });
+```
 
 ### Rotas com Express + Prisma
 
