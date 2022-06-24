@@ -34,8 +34,8 @@ Mais informações sobre o uso de cada ferramenta na [documentação](./docs/fee
 Clone o repositório e acesse a pasta:
 
 ```cl
-$ git clone https://github.com/devlucascardoso/feedback-widget
-$ cd nlw8
+$ git clone https://github.com/EdersonRodrigues7/feedget-app
+$ cd feedget-app
 ```
 
 Utilize o **yarn** ou o **npm install** para instalar as dependências do projeto.
